@@ -16,8 +16,8 @@ public class Product {// constructure yapýcý blok
 		System.out.println(); 
 	}
 	
-	public Product(int id, String name, double unitPrice, String detail, 
-			double discount,double unitPriceAfterDiscount) {
+	public Product(int id, String name, double unitPrice, String detail, double discount,double unitPriceAfterDiscount) 
+	{
 	
 		this.id = id;
 		this.name = name;
@@ -29,47 +29,58 @@ public class Product {// constructure yapýcý blok
 
 	}
 
-	public int getId() {
+	public int getId() 
+	{
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(int id) 
+	{
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getName()
+	{
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name)
+	{
 		this.name = name;
 	}
 
-	public double getUnitPrice() {
+	public double getUnitPrice() 
+	{
 		return unitPrice;
 	}
 
-	public void setUnitPrice(double unitPrice) {
+	public void setUnitPrice(double unitPrice)
+    {
 		this.unitPrice = unitPrice;
 	}
 
-	public String getDetail() {
+	public String getDetail() 
+	{
 		return detail;
 	}
 
-	public void setDetail(String detail) {
+	public void setDetail(String detail)
+	{
 		this.detail = detail;
 	}
 
-	public double getDiscount() {
+	public double getDiscount()
+	{
 		return discount;
 	}
 
-	public void setDiscount(double discount) {
+	public void setDiscount(double discount)
+	{
 		this.discount = discount;
 	}
 
-	public double getUnitPriceAfterDiscount() {
+	public double getUnitPriceAfterDiscount() 
+	{
 		return this.unitPrice-(this.unitPrice* this.discount/100);
 	}
 	
